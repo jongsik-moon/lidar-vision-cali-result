@@ -84,6 +84,8 @@ int main(int argc, char** argv){
     cali.push_back(tempfloat);
   }
 
+	
+	//TODO: tranformation matrix 한번에 되게 하기
   while(ros::ok()){
     if(lidarFlag && visionFlag){
       Eigen::Affine3f transform = pcl::getTransformation(cali[0], cali[1], cali[2], M_PI, 0, 0);
