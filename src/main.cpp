@@ -91,7 +91,7 @@ int main(int argc, char** argv){
       for(int i=0; i<pcData->points.size(); i++){
 	float u = fx*(pcData->points[i].y / pcData->points[i].x) + cx;
         float v = -fy*(pcData->points[i].z / pcData->points[i].x) + cy;
-        if(u > 0 && u < 640 && v > 0 && v < 480){
+        if(u > 0 && u < 688 && v > 0 && v < 516){
           cv::circle(cv_ptr->image, cv::Point(u, v), 2, cv::Scalar(0, 0, 255), 1);
         }
 	
